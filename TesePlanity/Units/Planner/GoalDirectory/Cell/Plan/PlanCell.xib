@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="planCellIdentifier" id="gTV-IL-0wX" customClass="PlanCell" customModule="TesePlanity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2h-i6-Uex">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBZ-GN-VRa">
+                                <rect key="frame" x="5" y="5" width="120" height="130"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-Ey-YLS">
+                                        <rect key="frame" x="10" y="10" width="55" height="55"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-x1-7vN">
+                                                <rect key="frame" x="10" y="10" width="35" height="35"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.7607843876" green="0.85490196939999996" blue="0.98823529480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="5k8-x1-7vN" firstAttribute="top" secondItem="VXd-Ey-YLS" secondAttribute="top" constant="10" id="7Mu-Uc-OeO"/>
+                                            <constraint firstAttribute="width" constant="55" id="8w2-or-bnx"/>
+                                            <constraint firstAttribute="bottom" secondItem="5k8-x1-7vN" secondAttribute="bottom" constant="10" id="AGC-1s-dTE"/>
+                                            <constraint firstAttribute="height" constant="55" id="PVR-Mc-e3M"/>
+                                            <constraint firstAttribute="trailing" secondItem="5k8-x1-7vN" secondAttribute="trailing" constant="10" id="Shy-K2-vN3"/>
+                                            <constraint firstItem="5k8-x1-7vN" firstAttribute="leading" secondItem="VXd-Ey-YLS" secondAttribute="leading" constant="10" id="xPg-No-8LQ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efb-LR-45e">
+                                        <rect key="frame" x="10" y="70" width="105" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="OQ1-qh-zAf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.23921570180000001" green="0.49803921579999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-vq-itg">
+                                        <rect key="frame" x="10" y="95" width="105" height="23.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
+                                        <color key="textColor" red="0.46274507050000002" green="0.63137257099999999" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Efb-LR-45e" secondAttribute="trailing" constant="5" id="0D0-B8-LV9"/>
+                                    <constraint firstItem="ze0-vq-itg" firstAttribute="top" secondItem="Efb-LR-45e" secondAttribute="bottom" constant="5" id="Bmc-YK-11J"/>
+                                    <constraint firstItem="VXd-Ey-YLS" firstAttribute="top" secondItem="MBZ-GN-VRa" secondAttribute="top" constant="10" id="IDt-q3-hxM"/>
+                                    <constraint firstItem="Efb-LR-45e" firstAttribute="leading" secondItem="MBZ-GN-VRa" secondAttribute="leading" constant="10" id="NRV-OI-7pH"/>
+                                    <constraint firstItem="ze0-vq-itg" firstAttribute="leading" secondItem="MBZ-GN-VRa" secondAttribute="leading" constant="10" id="RYk-kN-x4I"/>
+                                    <constraint firstAttribute="trailing" secondItem="ze0-vq-itg" secondAttribute="trailing" constant="5" id="WjJ-tS-gKc"/>
+                                    <constraint firstItem="VXd-Ey-YLS" firstAttribute="leading" secondItem="MBZ-GN-VRa" secondAttribute="leading" constant="10" id="gZs-uU-KVp"/>
+                                    <constraint firstItem="Efb-LR-45e" firstAttribute="top" secondItem="VXd-Ey-YLS" secondAttribute="bottom" constant="5" id="lY7-EK-2W4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MBZ-GN-VRa" firstAttribute="top" secondItem="u2h-i6-Uex" secondAttribute="top" constant="5" id="GoV-cF-ieJ"/>
+                            <constraint firstItem="MBZ-GN-VRa" firstAttribute="leading" secondItem="u2h-i6-Uex" secondAttribute="leading" constant="5" id="Hyl-Sm-Cx5"/>
+                            <constraint firstAttribute="trailing" secondItem="MBZ-GN-VRa" secondAttribute="trailing" constant="5" id="Jrf-Gw-9Je"/>
+                            <constraint firstAttribute="bottom" secondItem="MBZ-GN-VRa" secondAttribute="bottom" constant="5" id="nGO-nN-bvR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="u2h-i6-Uex" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="698-3n-0iR"/>
+                <constraint firstAttribute="bottom" secondItem="u2h-i6-Uex" secondAttribute="bottom" id="Tcm-zM-vEd"/>
+                <constraint firstItem="u2h-i6-Uex" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Wi3-Kc-7CZ"/>
+                <constraint firstAttribute="trailing" secondItem="u2h-i6-Uex" secondAttribute="trailing" id="oH7-wg-qVB"/>
+            </constraints>
+            <size key="customSize" width="130" height="140"/>
+            <connections>
+                <outlet property="datePlan" destination="Efb-LR-45e" id="M54-td-zRX"/>
+                <outlet property="picturePlan" destination="5k8-x1-7vN" id="D7w-KP-Xsj"/>
+                <outlet property="picturePlanView" destination="VXd-Ey-YLS" id="gbL-Tl-8Om"/>
+                <outlet property="planView" destination="MBZ-GN-VRa" id="Tya-Aj-pax"/>
+                <outlet property="titlePlan" destination="ze0-vq-itg" id="0Ec-hX-vi2"/>
+            </connections>
+            <point key="canvasLocation" x="198.47328244274809" y="52.112676056338032"/>
+        </collectionViewCell>
+    </objects>
+</document>

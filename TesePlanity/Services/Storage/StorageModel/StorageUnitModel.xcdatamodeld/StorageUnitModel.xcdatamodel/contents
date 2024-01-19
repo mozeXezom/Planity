@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="23B92" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="UnitPlan" representedClassName="UnitPlan" syncable="YES">
+        <attribute name="unitDate" optional="YES" attributeType="String"/>
+        <attribute name="unitPlanInform" optional="YES" attributeType="String"/>
+        <attribute name="unitPlanPicture" optional="YES" attributeType="Binary"/>
+        <attribute name="unitPlanTitle" optional="YES" attributeType="String"/>
+        <attribute name="unitSum" optional="YES" attributeType="String"/>
+    </entity>
+</model>

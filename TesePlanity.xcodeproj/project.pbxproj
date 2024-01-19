@@ -7,23 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA10AD632B5858670052B9A9 /* LoadingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AD622B5858670052B9A9 /* LoadingBuilder.swift */; };
+		DA10AD652B58590D0052B9A9 /* StartGuideBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AD642B58590D0052B9A9 /* StartGuideBuilder.swift */; };
+		DA10AD692B585A760052B9A9 /* NavigatorUnitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AD682B585A760052B9A9 /* NavigatorUnitService.swift */; };
+		DA10AD6B2B585C090052B9A9 /* LoadingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AD6A2B585C090052B9A9 /* LoadingNavigator.swift */; };
+		DA10AD6D2B585ED50052B9A9 /* StartGuideNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AD6C2B585ED50052B9A9 /* StartGuideNavigator.swift */; };
+		DA10AD732B585F670052B9A9 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA10AD6E2B585F670052B9A9 /* OpenSans-SemiBold.ttf */; };
+		DA10AD742B585F670052B9A9 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA10AD6F2B585F670052B9A9 /* OpenSans-Regular.ttf */; };
+		DA10AD752B585F670052B9A9 /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA10AD702B585F670052B9A9 /* OpenSans-Medium.ttf */; };
+		DA10AD762B585F670052B9A9 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA10AD712B585F670052B9A9 /* OpenSans-LightItalic.ttf */; };
+		DA10AD772B585F670052B9A9 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA10AD722B585F670052B9A9 /* OpenSans-Bold.ttf */; };
+		DA10AD7A2B5865330052B9A9 /* PlannerUnit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA10AD792B5865330052B9A9 /* PlannerUnit.storyboard */; };
+		DA10AD7D2B5865BF0052B9A9 /* DirectoryControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA10AD7C2B5865BF0052B9A9 /* DirectoryControllerUnit.swift */; };
+		DA2E4DAB2B594ADE00C9EE57 /* DirectoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DAA2B594ADE00C9EE57 /* DirectoryBuilder.swift */; };
+		DA2E4DAD2B594AF600C9EE57 /* DirectoryNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DAC2B594AF600C9EE57 /* DirectoryNavigator.swift */; };
+		DA2E4DB42B59599000C9EE57 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DB22B59599000C9EE57 /* MonthCell.swift */; };
+		DA2E4DB52B59599000C9EE57 /* MonthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2E4DB32B59599000C9EE57 /* MonthCell.xib */; };
+		DA2E4DB82B595AFC00C9EE57 /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DB62B595AFC00C9EE57 /* PlanCell.swift */; };
+		DA2E4DB92B595AFC00C9EE57 /* PlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2E4DB72B595AFC00C9EE57 /* PlanCell.xib */; };
+		DA2E4DBC2B595B0900C9EE57 /* TypePlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DBA2B595B0900C9EE57 /* TypePlanCell.swift */; };
+		DA2E4DBD2B595B0900C9EE57 /* TypePlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2E4DBB2B595B0900C9EE57 /* TypePlanCell.xib */; };
+		DA2E4DC02B59652E00C9EE57 /* DayMonthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DBF2B59652E00C9EE57 /* DayMonthModel.swift */; };
+		DA30084B2B5724A300EE39DB /* StartGuideControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30084A2B5724A300EE39DB /* StartGuideControllerUnit.swift */; };
+		DA444D862B59B59E0049E3CF /* TypePlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA444D852B59B59E0049E3CF /* TypePlanModel.swift */; };
+		DA93AC582B5B04E7008F64CF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA93AC572B5B04E7008F64CF /* IQKeyboardManagerSwift */; };
+		DA93AC5A2B5B08F2008F64CF /* StorageUnitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC592B5B08F2008F64CF /* StorageUnitService.swift */; };
+		DA93AC5F2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC5D2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld */; };
+		DA93AC622B5B09BB008F64CF /* UnitPlan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC602B5B09BB008F64CF /* UnitPlan+CoreDataClass.swift */; };
+		DA93AC632B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC612B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift */; };
+		DA93AC672B5B21BA008F64CF /* ExploringPlansControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC662B5B21BA008F64CF /* ExploringPlansControllerUnit.swift */; };
+		DA93AC692B5B21EF008F64CF /* ExploringPlansBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC682B5B21EF008F64CF /* ExploringPlansBuilder.swift */; };
+		DA93AC6B2B5B2200008F64CF /* ExploringPlansNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC6A2B5B2200008F64CF /* ExploringPlansNavigator.swift */; };
+		DA93AC6E2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC6D2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift */; };
+		DA93AC702B5B2F7F008F64CF /* PlannerMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC6F2B5B2F7F008F64CF /* PlannerMenuBuilder.swift */; };
+		DA93AC722B5B2F8C008F64CF /* PlannerMenuNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC712B5B2F8C008F64CF /* PlannerMenuNavigator.swift */; };
 		DACFE7882B5090BE0025CF99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE7872B5090BE0025CF99 /* AppDelegate.swift */; };
-		DACFE78A2B5090BE0025CF99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE7892B5090BE0025CF99 /* SceneDelegate.swift */; };
-		DACFE78C2B5090BE0025CF99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE78B2B5090BE0025CF99 /* ViewController.swift */; };
-		DACFE78F2B5090BE0025CF99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACFE78D2B5090BE0025CF99 /* Main.storyboard */; };
+		DACFE78C2B5090BE0025CF99 /* LoadingControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */; };
+		DACFE78F2B5090BE0025CF99 /* StarterUnit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACFE78D2B5090BE0025CF99 /* StarterUnit.storyboard */; };
 		DACFE7912B5090BF0025CF99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACFE7902B5090BF0025CF99 /* Assets.xcassets */; };
 		DACFE7942B5090BF0025CF99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACFE7922B5090BF0025CF99 /* LaunchScreen.storyboard */; };
+		DAF5D8EC2B5A888800A6A7A8 /* PlanAddingControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D8EB2B5A888800A6A7A8 /* PlanAddingControllerUnit.swift */; };
+		DAF5D8EE2B5A8B6C00A6A7A8 /* PlanAddingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D8ED2B5A8B6C00A6A7A8 /* PlanAddingBuilder.swift */; };
+		DAF5D8F02B5A8B7E00A6A7A8 /* PlanAddingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D8EF2B5A8B7E00A6A7A8 /* PlanAddingNavigator.swift */; };
+		DAF5D8F42B5A9BB200A6A7A8 /* PlanAddingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D8F22B5A9BB200A6A7A8 /* PlanAddingCell.swift */; };
+		DAF5D8F52B5A9BB200A6A7A8 /* PlanAddingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF5D8F32B5A9BB200A6A7A8 /* PlanAddingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA10AD622B5858670052B9A9 /* LoadingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBuilder.swift; sourceTree = "<group>"; };
+		DA10AD642B58590D0052B9A9 /* StartGuideBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGuideBuilder.swift; sourceTree = "<group>"; };
+		DA10AD682B585A760052B9A9 /* NavigatorUnitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorUnitService.swift; sourceTree = "<group>"; };
+		DA10AD6A2B585C090052B9A9 /* LoadingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingNavigator.swift; sourceTree = "<group>"; };
+		DA10AD6C2B585ED50052B9A9 /* StartGuideNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGuideNavigator.swift; sourceTree = "<group>"; };
+		DA10AD6E2B585F670052B9A9 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		DA10AD6F2B585F670052B9A9 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DA10AD702B585F670052B9A9 /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Medium.ttf"; sourceTree = "<group>"; };
+		DA10AD712B585F670052B9A9 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		DA10AD722B585F670052B9A9 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DA10AD792B5865330052B9A9 /* PlannerUnit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlannerUnit.storyboard; sourceTree = "<group>"; };
+		DA10AD7C2B5865BF0052B9A9 /* DirectoryControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryControllerUnit.swift; sourceTree = "<group>"; };
+		DA2E4DAA2B594ADE00C9EE57 /* DirectoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryBuilder.swift; sourceTree = "<group>"; };
+		DA2E4DAC2B594AF600C9EE57 /* DirectoryNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryNavigator.swift; sourceTree = "<group>"; };
+		DA2E4DB22B59599000C9EE57 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
+		DA2E4DB32B59599000C9EE57 /* MonthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthCell.xib; sourceTree = "<group>"; };
+		DA2E4DB62B595AFC00C9EE57 /* PlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
+		DA2E4DB72B595AFC00C9EE57 /* PlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCell.xib; sourceTree = "<group>"; };
+		DA2E4DBA2B595B0900C9EE57 /* TypePlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePlanCell.swift; sourceTree = "<group>"; };
+		DA2E4DBB2B595B0900C9EE57 /* TypePlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypePlanCell.xib; sourceTree = "<group>"; };
+		DA2E4DBF2B59652E00C9EE57 /* DayMonthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMonthModel.swift; sourceTree = "<group>"; };
+		DA30084A2B5724A300EE39DB /* StartGuideControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGuideControllerUnit.swift; sourceTree = "<group>"; };
+		DA444D852B59B59E0049E3CF /* TypePlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePlanModel.swift; sourceTree = "<group>"; };
+		DA93AC592B5B08F2008F64CF /* StorageUnitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUnitService.swift; sourceTree = "<group>"; };
+		DA93AC5E2B5B0941008F64CF /* StorageUnitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StorageUnitModel.xcdatamodel; sourceTree = "<group>"; };
+		DA93AC602B5B09BB008F64CF /* UnitPlan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitPlan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA93AC612B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitPlan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA93AC662B5B21BA008F64CF /* ExploringPlansControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploringPlansControllerUnit.swift; sourceTree = "<group>"; };
+		DA93AC682B5B21EF008F64CF /* ExploringPlansBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploringPlansBuilder.swift; sourceTree = "<group>"; };
+		DA93AC6A2B5B2200008F64CF /* ExploringPlansNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploringPlansNavigator.swift; sourceTree = "<group>"; };
+		DA93AC6D2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerMenuControllerUnit.swift; sourceTree = "<group>"; };
+		DA93AC6F2B5B2F7F008F64CF /* PlannerMenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerMenuBuilder.swift; sourceTree = "<group>"; };
+		DA93AC712B5B2F8C008F64CF /* PlannerMenuNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerMenuNavigator.swift; sourceTree = "<group>"; };
 		DACFE7842B5090BE0025CF99 /* TesePlanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesePlanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACFE7872B5090BE0025CF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DACFE7892B5090BE0025CF99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DACFE78B2B5090BE0025CF99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DACFE78E2B5090BE0025CF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingControllerUnit.swift; sourceTree = "<group>"; };
+		DACFE78E2B5090BE0025CF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StarterUnit.storyboard; sourceTree = "<group>"; };
 		DACFE7902B5090BF0025CF99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DACFE7932B5090BF0025CF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DACFE7952B5090BF0025CF99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF5D8EB2B5A888800A6A7A8 /* PlanAddingControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAddingControllerUnit.swift; sourceTree = "<group>"; };
+		DAF5D8ED2B5A8B6C00A6A7A8 /* PlanAddingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAddingBuilder.swift; sourceTree = "<group>"; };
+		DAF5D8EF2B5A8B7E00A6A7A8 /* PlanAddingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAddingNavigator.swift; sourceTree = "<group>"; };
+		DAF5D8F22B5A9BB200A6A7A8 /* PlanAddingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAddingCell.swift; sourceTree = "<group>"; };
+		DAF5D8F32B5A9BB200A6A7A8 /* PlanAddingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanAddingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +106,232 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA93AC582B5B04E7008F64CF /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA10AD672B585A430052B9A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC5B2B5B0928008F64CF /* Storage */,
+				DA10AD682B585A760052B9A9 /* NavigatorUnitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA10AD782B5865090052B9A9 /* Planner */ = {
+			isa = PBXGroup;
+			children = (
+				DA10AD792B5865330052B9A9 /* PlannerUnit.storyboard */,
+				DA10AD7B2B5865950052B9A9 /* GoalDirectory */,
+				DAF5D8EA2B5A885F00A6A7A8 /* PlanAdding */,
+				DA93AC652B5B218C008F64CF /* ExploringPlans */,
+				DA93AC6C2B5B2F48008F64CF /* PlannerMenu */,
+			);
+			path = Planner;
+			sourceTree = "<group>";
+		};
+		DA10AD7B2B5865950052B9A9 /* GoalDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E4DAE2B59594B00C9EE57 /* Cell */,
+				DA2E4DBE2B59651500C9EE57 /* Model */,
+				DA10AD7C2B5865BF0052B9A9 /* DirectoryControllerUnit.swift */,
+				DA2E4DAA2B594ADE00C9EE57 /* DirectoryBuilder.swift */,
+				DA2E4DAC2B594AF600C9EE57 /* DirectoryNavigator.swift */,
+			);
+			path = GoalDirectory;
+			sourceTree = "<group>";
+		};
+		DA2E4DAE2B59594B00C9EE57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E4DAF2B59595200C9EE57 /* Month */,
+				DA2E4DB02B59595800C9EE57 /* Plan */,
+				DA2E4DB12B59596600C9EE57 /* TypePlan */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DA2E4DAF2B59595200C9EE57 /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E4DB22B59599000C9EE57 /* MonthCell.swift */,
+				DA2E4DB32B59599000C9EE57 /* MonthCell.xib */,
+			);
+			path = Month;
+			sourceTree = "<group>";
+		};
+		DA2E4DB02B59595800C9EE57 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E4DB62B595AFC00C9EE57 /* PlanCell.swift */,
+				DA2E4DB72B595AFC00C9EE57 /* PlanCell.xib */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		DA2E4DB12B59596600C9EE57 /* TypePlan */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E4DBA2B595B0900C9EE57 /* TypePlanCell.swift */,
+				DA2E4DBB2B595B0900C9EE57 /* TypePlanCell.xib */,
+			);
+			path = TypePlan;
+			sourceTree = "<group>";
+		};
+		DA2E4DBE2B59651500C9EE57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA2E4DBF2B59652E00C9EE57 /* DayMonthModel.swift */,
+				DA444D852B59B59E0049E3CF /* TypePlanModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA30083E2B57234B00EE39DB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DA30083F2B57235400EE39DB /* State */,
+				DA3008402B57236200EE39DB /* MainInfo */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DA30083F2B57235400EE39DB /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DACFE7872B5090BE0025CF99 /* AppDelegate.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DA3008402B57236200EE39DB /* MainInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DACFE7952B5090BF0025CF99 /* Info.plist */,
+			);
+			path = MainInfo;
+			sourceTree = "<group>";
+		};
+		DA3008412B57238500EE39DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DACFE7902B5090BF0025CF99 /* Assets.xcassets */,
+				DACFE7922B5090BF0025CF99 /* LaunchScreen.storyboard */,
+				DA3008422B57239000EE39DB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA3008422B57239000EE39DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DA10AD722B585F670052B9A9 /* OpenSans-Bold.ttf */,
+				DA10AD712B585F670052B9A9 /* OpenSans-LightItalic.ttf */,
+				DA10AD702B585F670052B9A9 /* OpenSans-Medium.ttf */,
+				DA10AD6F2B585F670052B9A9 /* OpenSans-Regular.ttf */,
+				DA10AD6E2B585F670052B9A9 /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DA3008432B5723A700EE39DB /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				DA3008442B5723D400EE39DB /* Starter */,
+				DA10AD782B5865090052B9A9 /* Planner */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		DA3008442B5723D400EE39DB /* Starter */ = {
+			isa = PBXGroup;
+			children = (
+				DACFE78D2B5090BE0025CF99 /* StarterUnit.storyboard */,
+				DA3008452B57240900EE39DB /* Loading */,
+				DA3008492B57248400EE39DB /* StartGuide */,
+			);
+			path = Starter;
+			sourceTree = "<group>";
+		};
+		DA3008452B57240900EE39DB /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */,
+				DA10AD622B5858670052B9A9 /* LoadingBuilder.swift */,
+				DA10AD6A2B585C090052B9A9 /* LoadingNavigator.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		DA3008482B57246500EE39DB /* Networker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networker;
+			sourceTree = "<group>";
+		};
+		DA3008492B57248400EE39DB /* StartGuide */ = {
+			isa = PBXGroup;
+			children = (
+				DA30084A2B5724A300EE39DB /* StartGuideControllerUnit.swift */,
+				DA10AD642B58590D0052B9A9 /* StartGuideBuilder.swift */,
+				DA10AD6C2B585ED50052B9A9 /* StartGuideNavigator.swift */,
+			);
+			path = StartGuide;
+			sourceTree = "<group>";
+		};
+		DA93AC5B2B5B0928008F64CF /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC592B5B08F2008F64CF /* StorageUnitService.swift */,
+				DA93AC642B5B09C0008F64CF /* EntityModel */,
+				DA93AC5C2B5B092F008F64CF /* StorageModel */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DA93AC5C2B5B092F008F64CF /* StorageModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC5D2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld */,
+			);
+			path = StorageModel;
+			sourceTree = "<group>";
+		};
+		DA93AC642B5B09C0008F64CF /* EntityModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC602B5B09BB008F64CF /* UnitPlan+CoreDataClass.swift */,
+				DA93AC612B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift */,
+			);
+			path = EntityModel;
+			sourceTree = "<group>";
+		};
+		DA93AC652B5B218C008F64CF /* ExploringPlans */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC662B5B21BA008F64CF /* ExploringPlansControllerUnit.swift */,
+				DA93AC682B5B21EF008F64CF /* ExploringPlansBuilder.swift */,
+				DA93AC6A2B5B2200008F64CF /* ExploringPlansNavigator.swift */,
+			);
+			path = ExploringPlans;
+			sourceTree = "<group>";
+		};
+		DA93AC6C2B5B2F48008F64CF /* PlannerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC6D2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift */,
+				DA93AC6F2B5B2F7F008F64CF /* PlannerMenuBuilder.swift */,
+				DA93AC712B5B2F8C008F64CF /* PlannerMenuNavigator.swift */,
+			);
+			path = PlannerMenu;
+			sourceTree = "<group>";
+		};
 		DACFE77B2B5090BE0025CF99 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +351,33 @@
 		DACFE7862B5090BE0025CF99 /* TesePlanity */ = {
 			isa = PBXGroup;
 			children = (
-				DACFE7872B5090BE0025CF99 /* AppDelegate.swift */,
-				DACFE7892B5090BE0025CF99 /* SceneDelegate.swift */,
-				DACFE78B2B5090BE0025CF99 /* ViewController.swift */,
-				DACFE78D2B5090BE0025CF99 /* Main.storyboard */,
-				DACFE7902B5090BF0025CF99 /* Assets.xcassets */,
-				DACFE7922B5090BF0025CF99 /* LaunchScreen.storyboard */,
-				DACFE7952B5090BF0025CF99 /* Info.plist */,
+				DA30083E2B57234B00EE39DB /* Application */,
+				DA3008432B5723A700EE39DB /* Units */,
+				DA3008412B57238500EE39DB /* Resources */,
+				DA10AD672B585A430052B9A9 /* Services */,
+				DA3008482B57246500EE39DB /* Networker */,
 			);
 			path = TesePlanity;
+			sourceTree = "<group>";
+		};
+		DAF5D8EA2B5A885F00A6A7A8 /* PlanAdding */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5D8F12B5A9B9C00A6A7A8 /* Cell */,
+				DAF5D8EB2B5A888800A6A7A8 /* PlanAddingControllerUnit.swift */,
+				DAF5D8ED2B5A8B6C00A6A7A8 /* PlanAddingBuilder.swift */,
+				DAF5D8EF2B5A8B7E00A6A7A8 /* PlanAddingNavigator.swift */,
+			);
+			path = PlanAdding;
+			sourceTree = "<group>";
+		};
+		DAF5D8F12B5A9B9C00A6A7A8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5D8F22B5A9BB200A6A7A8 /* PlanAddingCell.swift */,
+				DAF5D8F32B5A9BB200A6A7A8 /* PlanAddingCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +396,9 @@
 			dependencies = (
 			);
 			name = TesePlanity;
+			packageProductDependencies = (
+				DA93AC572B5B04E7008F64CF /* IQKeyboardManagerSwift */,
+			);
 			productName = TesePlanity;
 			productReference = DACFE7842B5090BE0025CF99 /* TesePlanity.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +427,9 @@
 				Base,
 			);
 			mainGroup = DACFE77B2B5090BE0025CF99;
+			packageReferences = (
+				DA93AC562B5B04E7008F64CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = DACFE7852B5090BE0025CF99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +444,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA10AD752B585F670052B9A9 /* OpenSans-Medium.ttf in Resources */,
+				DAF5D8F52B5A9BB200A6A7A8 /* PlanAddingCell.xib in Resources */,
+				DA10AD742B585F670052B9A9 /* OpenSans-Regular.ttf in Resources */,
+				DA10AD772B585F670052B9A9 /* OpenSans-Bold.ttf in Resources */,
+				DA10AD762B585F670052B9A9 /* OpenSans-LightItalic.ttf in Resources */,
+				DA10AD7A2B5865330052B9A9 /* PlannerUnit.storyboard in Resources */,
+				DA10AD732B585F670052B9A9 /* OpenSans-SemiBold.ttf in Resources */,
 				DACFE7942B5090BF0025CF99 /* LaunchScreen.storyboard in Resources */,
 				DACFE7912B5090BF0025CF99 /* Assets.xcassets in Resources */,
-				DACFE78F2B5090BE0025CF99 /* Main.storyboard in Resources */,
+				DA2E4DB52B59599000C9EE57 /* MonthCell.xib in Resources */,
+				DACFE78F2B5090BE0025CF99 /* StarterUnit.storyboard in Resources */,
+				DA2E4DBD2B595B0900C9EE57 /* TypePlanCell.xib in Resources */,
+				DA2E4DB92B595AFC00C9EE57 /* PlanCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +467,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACFE78C2B5090BE0025CF99 /* ViewController.swift in Sources */,
+				DA2E4DB42B59599000C9EE57 /* MonthCell.swift in Sources */,
+				DA10AD6B2B585C090052B9A9 /* LoadingNavigator.swift in Sources */,
+				DA10AD632B5858670052B9A9 /* LoadingBuilder.swift in Sources */,
+				DA93AC5F2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld in Sources */,
+				DA93AC6B2B5B2200008F64CF /* ExploringPlansNavigator.swift in Sources */,
+				DA30084B2B5724A300EE39DB /* StartGuideControllerUnit.swift in Sources */,
+				DA10AD6D2B585ED50052B9A9 /* StartGuideNavigator.swift in Sources */,
+				DACFE78C2B5090BE0025CF99 /* LoadingControllerUnit.swift in Sources */,
+				DA93AC702B5B2F7F008F64CF /* PlannerMenuBuilder.swift in Sources */,
+				DA93AC672B5B21BA008F64CF /* ExploringPlansControllerUnit.swift in Sources */,
+				DA2E4DAB2B594ADE00C9EE57 /* DirectoryBuilder.swift in Sources */,
+				DA2E4DB82B595AFC00C9EE57 /* PlanCell.swift in Sources */,
+				DAF5D8F02B5A8B7E00A6A7A8 /* PlanAddingNavigator.swift in Sources */,
+				DAF5D8F42B5A9BB200A6A7A8 /* PlanAddingCell.swift in Sources */,
+				DA93AC5A2B5B08F2008F64CF /* StorageUnitService.swift in Sources */,
+				DA93AC622B5B09BB008F64CF /* UnitPlan+CoreDataClass.swift in Sources */,
+				DA2E4DC02B59652E00C9EE57 /* DayMonthModel.swift in Sources */,
+				DA93AC692B5B21EF008F64CF /* ExploringPlansBuilder.swift in Sources */,
+				DAF5D8EE2B5A8B6C00A6A7A8 /* PlanAddingBuilder.swift in Sources */,
+				DA2E4DAD2B594AF600C9EE57 /* DirectoryNavigator.swift in Sources */,
+				DAF5D8EC2B5A888800A6A7A8 /* PlanAddingControllerUnit.swift in Sources */,
+				DA10AD652B58590D0052B9A9 /* StartGuideBuilder.swift in Sources */,
 				DACFE7882B5090BE0025CF99 /* AppDelegate.swift in Sources */,
-				DACFE78A2B5090BE0025CF99 /* SceneDelegate.swift in Sources */,
+				DA93AC722B5B2F8C008F64CF /* PlannerMenuNavigator.swift in Sources */,
+				DA444D862B59B59E0049E3CF /* TypePlanModel.swift in Sources */,
+				DA93AC6E2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift in Sources */,
+				DA10AD7D2B5865BF0052B9A9 /* DirectoryControllerUnit.swift in Sources */,
+				DA2E4DBC2B595B0900C9EE57 /* TypePlanCell.swift in Sources */,
+				DA93AC632B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift in Sources */,
+				DA10AD692B585A760052B9A9 /* NavigatorUnitService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DACFE78D2B5090BE0025CF99 /* Main.storyboard */ = {
+		DACFE78D2B5090BE0025CF99 /* StarterUnit.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DACFE78E2B5090BE0025CF99 /* Base */,
 			);
-			name = Main.storyboard;
+			name = StarterUnit.storyboard;
 			sourceTree = "<group>";
 		};
 		DACFE7922B5090BF0025CF99 /* LaunchScreen.storyboard */ = {
@@ -293,10 +649,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TesePlanity/Info.plist;
+				INFOPLIST_FILE = TesePlanity/Application/MainInfo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = PlannerUnit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +662,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teslx.work.TesePlanity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,10 +679,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TesePlanity/Info.plist;
+				INFOPLIST_FILE = TesePlanity/Application/MainInfo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = PlannerUnit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +692,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teslx.work.TesePlanity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,6 +723,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA93AC562B5B04E7008F64CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA93AC572B5B04E7008F64CF /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA93AC562B5B04E7008F64CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DA93AC5D2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA93AC5E2B5B0941008F64CF /* StorageUnitModel.xcdatamodel */,
+			);
+			currentVersion = DA93AC5E2B5B0941008F64CF /* StorageUnitModel.xcdatamodel */;
+			path = StorageUnitModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DACFE77C2B5090BE0025CF99 /* Project object */;
 }
