@@ -41,6 +41,9 @@
 		DA93AC6E2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC6D2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift */; };
 		DA93AC702B5B2F7F008F64CF /* PlannerMenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC6F2B5B2F7F008F64CF /* PlannerMenuBuilder.swift */; };
 		DA93AC722B5B2F8C008F64CF /* PlannerMenuNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC712B5B2F8C008F64CF /* PlannerMenuNavigator.swift */; };
+		DA93AC752B5B39E8008F64CF /* CalendarPlanControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC742B5B39E8008F64CF /* CalendarPlanControllerUnit.swift */; };
+		DA93AC772B5B39F9008F64CF /* CalendarPlanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC762B5B39F9008F64CF /* CalendarPlanBuilder.swift */; };
+		DA93AC792B5B3A0A008F64CF /* CalendarPlanNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC782B5B3A0A008F64CF /* CalendarPlanNavigator.swift */; };
 		DACFE7882B5090BE0025CF99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE7872B5090BE0025CF99 /* AppDelegate.swift */; };
 		DACFE78C2B5090BE0025CF99 /* LoadingControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */; };
 		DACFE78F2B5090BE0025CF99 /* StarterUnit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACFE78D2B5090BE0025CF99 /* StarterUnit.storyboard */; };
@@ -87,6 +90,9 @@
 		DA93AC6D2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerMenuControllerUnit.swift; sourceTree = "<group>"; };
 		DA93AC6F2B5B2F7F008F64CF /* PlannerMenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerMenuBuilder.swift; sourceTree = "<group>"; };
 		DA93AC712B5B2F8C008F64CF /* PlannerMenuNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerMenuNavigator.swift; sourceTree = "<group>"; };
+		DA93AC742B5B39E8008F64CF /* CalendarPlanControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPlanControllerUnit.swift; sourceTree = "<group>"; };
+		DA93AC762B5B39F9008F64CF /* CalendarPlanBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPlanBuilder.swift; sourceTree = "<group>"; };
+		DA93AC782B5B3A0A008F64CF /* CalendarPlanNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPlanNavigator.swift; sourceTree = "<group>"; };
 		DACFE7842B5090BE0025CF99 /* TesePlanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesePlanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACFE7872B5090BE0025CF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingControllerUnit.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				DAF5D8EA2B5A885F00A6A7A8 /* PlanAdding */,
 				DA93AC652B5B218C008F64CF /* ExploringPlans */,
 				DA93AC6C2B5B2F48008F64CF /* PlannerMenu */,
+				DA93AC732B5B39D5008F64CF /* CalendarPlan */,
 			);
 			path = Planner;
 			sourceTree = "<group>";
@@ -332,6 +339,16 @@
 			path = PlannerMenu;
 			sourceTree = "<group>";
 		};
+		DA93AC732B5B39D5008F64CF /* CalendarPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC742B5B39E8008F64CF /* CalendarPlanControllerUnit.swift */,
+				DA93AC762B5B39F9008F64CF /* CalendarPlanBuilder.swift */,
+				DA93AC782B5B3A0A008F64CF /* CalendarPlanNavigator.swift */,
+			);
+			path = CalendarPlan;
+			sourceTree = "<group>";
+		};
 		DACFE77B2B5090BE0025CF99 = {
 			isa = PBXGroup;
 			children = (
@@ -467,12 +484,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA93AC772B5B39F9008F64CF /* CalendarPlanBuilder.swift in Sources */,
 				DA2E4DB42B59599000C9EE57 /* MonthCell.swift in Sources */,
 				DA10AD6B2B585C090052B9A9 /* LoadingNavigator.swift in Sources */,
 				DA10AD632B5858670052B9A9 /* LoadingBuilder.swift in Sources */,
 				DA93AC5F2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld in Sources */,
 				DA93AC6B2B5B2200008F64CF /* ExploringPlansNavigator.swift in Sources */,
 				DA30084B2B5724A300EE39DB /* StartGuideControllerUnit.swift in Sources */,
+				DA93AC792B5B3A0A008F64CF /* CalendarPlanNavigator.swift in Sources */,
 				DA10AD6D2B585ED50052B9A9 /* StartGuideNavigator.swift in Sources */,
 				DACFE78C2B5090BE0025CF99 /* LoadingControllerUnit.swift in Sources */,
 				DA93AC702B5B2F7F008F64CF /* PlannerMenuBuilder.swift in Sources */,
@@ -494,6 +513,7 @@
 				DA444D862B59B59E0049E3CF /* TypePlanModel.swift in Sources */,
 				DA93AC6E2B5B2F70008F64CF /* PlannerMenuControllerUnit.swift in Sources */,
 				DA10AD7D2B5865BF0052B9A9 /* DirectoryControllerUnit.swift in Sources */,
+				DA93AC752B5B39E8008F64CF /* CalendarPlanControllerUnit.swift in Sources */,
 				DA2E4DBC2B595B0900C9EE57 /* TypePlanCell.swift in Sources */,
 				DA93AC632B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift in Sources */,
 				DA10AD692B585A760052B9A9 /* NavigatorUnitService.swift in Sources */,
@@ -655,6 +675,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = PlannerUnit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,6 +706,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = PlannerUnit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

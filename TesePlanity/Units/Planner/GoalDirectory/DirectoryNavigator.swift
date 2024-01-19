@@ -18,12 +18,13 @@ final class DirectoryNavigator {
         }
     }
     
-    func enableNavigationToExploringPlansControllerUnit(_ planTitle: String, _ planInformation: String, _ planPicture: UIImage, _ planSum: String,  _ currentControllerUnit: UIViewController, unitPresentation: UIModalPresentationStyle, unitTransition: UIModalTransitionStyle) {
+    func enableNavigationToExploringPlansControllerUnit(_ planTitle: String, _ planInformation: String, _ planPicture: UIImage, _ planSum: String, _ unitPlan: UnitPlan,  _ currentControllerUnit: UIViewController, unitPresentation: UIModalPresentationStyle, unitTransition: UIModalTransitionStyle) {
         if let exploringPlansControllerUnit = navigatorUnitService.setControllerUnitInstantiation(fromUnitTag: .PlannerUnit, .exploringPlansUnit) as? ExploringPlansControllerUnit {
             exploringPlansControllerUnit.handledPlanTitle = planTitle
             exploringPlansControllerUnit.handledPlanInformation = planInformation
             exploringPlansControllerUnit.handledPlanPicture = planPicture
             exploringPlansControllerUnit.handledPlanSum = planSum
+            exploringPlansControllerUnit.handledUnitPlan = unitPlan
             exploringPlansControllerUnit.modalTransitionStyle = unitTransition
             exploringPlansControllerUnit.modalPresentationStyle = unitPresentation
             currentControllerUnit.present(exploringPlansControllerUnit, animated: true)

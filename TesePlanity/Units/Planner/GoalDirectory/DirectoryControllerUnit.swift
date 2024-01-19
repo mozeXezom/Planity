@@ -132,7 +132,7 @@ extension DirectoryControllerUnit: UICollectionViewDelegate, UICollectionViewDat
             let sendPlanData = handledUnitPlans[indexPath.row]
             let sendPlanPicture = UIImage(data: sendPlanData.unitPlanPicture!)
             
-            navigator.enableNavigationToExploringPlansControllerUnit(sendPlanData.unitPlanTitle ?? "", sendPlanData.unitPlanInform ?? "", sendPlanPicture!, sendPlanData.unitSum ?? "", self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
+            navigator.enableNavigationToExploringPlansControllerUnit(sendPlanData.unitPlanTitle ?? "", sendPlanData.unitPlanInform ?? "", sendPlanPicture!, sendPlanData.unitSum ?? "", sendPlanData, self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
         } else if collectionView == typePlanCollectionView {
             let planObjectsType = fullTypePlanObjects[indexPath.row]
             

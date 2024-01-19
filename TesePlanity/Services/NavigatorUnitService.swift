@@ -23,6 +23,7 @@ final class NavigatorUnitService {
         case planAddingUnit
         case exploringPlansUnit
         case plannerMenuUnit
+        case calendarPlanUnit
     }
 
     func setControllerUnitInstantiation<T: UIViewController>(fromUnitTag unitTag: UnitTag, _ controllerUnit: ControllerUnitId) -> T {

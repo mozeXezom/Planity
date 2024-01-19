@@ -45,7 +45,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efb-LR-45e">
-                                        <rect key="frame" x="10" y="70" width="105" height="20"/>
+                                        <rect key="frame" x="10" y="70" width="100" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="OQ1-qh-zAf"/>
                                         </constraints>
@@ -62,7 +62,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Efb-LR-45e" secondAttribute="trailing" constant="5" id="0D0-B8-LV9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efb-LR-45e" secondAttribute="trailing" constant="10" id="0D0-B8-LV9"/>
                                     <constraint firstItem="ze0-vq-itg" firstAttribute="top" secondItem="Efb-LR-45e" secondAttribute="bottom" constant="5" id="Bmc-YK-11J"/>
                                     <constraint firstItem="VXd-Ey-YLS" firstAttribute="top" secondItem="MBZ-GN-VRa" secondAttribute="top" constant="10" id="IDt-q3-hxM"/>
                                     <constraint firstItem="Efb-LR-45e" firstAttribute="leading" secondItem="MBZ-GN-VRa" secondAttribute="leading" constant="10" id="NRV-OI-7pH"/>

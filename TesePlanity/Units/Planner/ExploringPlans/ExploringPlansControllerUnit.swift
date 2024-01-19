@@ -18,6 +18,7 @@ class ExploringPlansControllerUnit: UIViewController {
     var handledPlanInformation: String?
     var handledPlanPicture: UIImage?
     var handledPlanSum: String?
+    var handledUnitPlan: UnitPlan?
 
     override func viewDidLoad() {
         super.viewDidLoad()
