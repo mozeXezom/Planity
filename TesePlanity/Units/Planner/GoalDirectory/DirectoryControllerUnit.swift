@@ -14,6 +14,12 @@ class DirectoryControllerUnit: UIViewController {
     @IBOutlet weak var planCollectionView: UICollectionView!
     @IBOutlet weak var typePlanCollectionView: UICollectionView!
     @IBOutlet weak var plannerMenuButton: UIButton!
+    @IBOutlet weak var calendarPlanButton: UIButton!
+    
+    @IBOutlet weak var userPlans: UILabel!
+    @IBOutlet weak var allPlansTypes: UILabel!
+    @IBOutlet weak var plansStats: UILabel!
+    @IBOutlet weak var userWelcomeNickname: UITextField!
     
     //Directory statistics
     @IBOutlet weak var statisticsDirectoryView: UIView!
@@ -42,6 +48,8 @@ class DirectoryControllerUnit: UIViewController {
     private func setDirectoryUnitConfiguration() {
         builder.initializeShadowView(topDirectoryView)
         builder.drawDirectoryStatisticsView(statisticsDirectoryView, previewStatistics, greenStat: creationStats, creationStatsType, yellowStat: doneStats, doneStatsType)
+        builder.initalizeDirectoryUI(calendarPlanButton, userPlans, allPlansTypes, plansStats, plannerMenuButton)
+        builder.setWelcomeUserNicknameTextField(userWelcomeNickname, self)
         builder.filterDayMonthFromModel { (filteredDayMonth) in
             self.monthDays = filteredDayMonth
         }
@@ -52,6 +60,7 @@ class DirectoryControllerUnit: UIViewController {
     private func setDirectoriesCollectionViews() {
         builder.createCustomDirectoryCollectionView(monthCollectionView, self, "MonthCell", "monthCellIdentifier")
         builder.createCustomDirectoryCollectionView(planCollectionView, self, "PlanCell", "planCellIdentifier")
+        builder.createCustomDirectoryCollectionView(planCollectionView, self, "EmptyPlanCell", "emptyPlanCellIdentifier")
         builder.createCustomDirectoryCollectionView(typePlanCollectionView, self, "TypePlanCell", "typePlanCellIdentifier")
     }
     
@@ -76,6 +85,10 @@ class DirectoryControllerUnit: UIViewController {
     @IBAction func plannerMenuHandle(_ sender: UIButton) {
         navigator.enableNavigationToPlannerMenuControllerUnit(self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
     }
+    
+    @IBAction func calendarPlanHundle(_ sender: UIButton) {
+        navigator.enableNavigationToCalendarPlanControllerUnit(self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
+    }
 }
 
 extension DirectoryControllerUnit: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -83,14 +96,32 @@ extension DirectoryControllerUnit: UICollectionViewDelegate, UICollectionViewDat
         if collectionView == monthCollectionView {
             return monthDays.count
         } else if collectionView == planCollectionView {
-            return handledUnitPlans.count
+            if section == 0 {
+                // Section 0 should have only one item (EmptyPlanCell)
+                return 1
+            } else if section == 1 {
+                // Section 1 should have the count of handledUnitPlans
+                return handledUnitPlans.count
+            }
         } else if collectionView == typePlanCollectionView {
             return fullTypePlanObjects.count
         }
         
         return 0
     }
-    
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if collectionView == monthCollectionView {
+            return 1
+        } else if collectionView == planCollectionView {
+            return 2
+        } else if collectionView == typePlanCollectionView {
+            return 1
+        }
+        
+        return 0
+    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == monthCollectionView {
             guard let monthCell = collectionView.dequeueReusableCell(withReuseIdentifier: "monthCellIdentifier", for: indexPath) as? MonthCell else {
@@ -102,16 +133,27 @@ extension DirectoryControllerUnit: UICollectionViewDelegate, UICollectionViewDat
             return monthCell
             
         } else if collectionView == planCollectionView {
-            guard let planCell = collectionView.dequeueReusableCell(withReuseIdentifier: "planCellIdentifier", for: indexPath) as? PlanCell else {
-                return UICollectionViewCell()
+            if indexPath.section == 0 {
+                guard let emptyPlanCell = collectionView.dequeueReusableCell(withReuseIdentifier: "emptyPlanCellIdentifier", for: indexPath) as? EmptyPlanCell else {
+                    return UICollectionViewCell()
+                }
+                
+                emptyPlanCell.setEmptyPlanCellConfiguration(UIImage(named: "newPlan")!, "Dodaj plan")
+                
+                return emptyPlanCell
+            } else if indexPath.section == 1 {
+
+                guard let planCell = collectionView.dequeueReusableCell(withReuseIdentifier: "planCellIdentifier", for: indexPath) as? PlanCell else {
+                    return UICollectionViewCell()
+                }
+                
+                let fetchedPlanData = handledUnitPlans[indexPath.row]
+                let fetchedPicture = UIImage(data: fetchedPlanData.unitPlanPicture!)
+                
+                planCell.setPlanCellConfiguration(fetchedPicture!, fetchedPlanData.unitPlanTitle ?? "", fetchedPlanData.unitDate ?? "")
+                
+                return planCell
             }
-            
-            let fetchedPlanData = handledUnitPlans[indexPath.row]
-            let fetchedPicture = UIImage(data: fetchedPlanData.unitPlanPicture!)
-            
-            planCell.setPlanCellConfiguration(fetchedPicture!, fetchedPlanData.unitPlanTitle ?? "", fetchedPlanData.unitDate ?? "")
-            
-            return planCell
         } else if collectionView == typePlanCollectionView {
             guard let typePlanCell = collectionView.dequeueReusableCell(withReuseIdentifier: "typePlanCellIdentifier", for: indexPath) as? TypePlanCell else {
                 return UICollectionViewCell()
@@ -126,13 +168,17 @@ extension DirectoryControllerUnit: UICollectionViewDelegate, UICollectionViewDat
         
         return UICollectionViewCell()
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == planCollectionView {
-            let sendPlanData = handledUnitPlans[indexPath.row]
-            let sendPlanPicture = UIImage(data: sendPlanData.unitPlanPicture!)
-            
-            navigator.enableNavigationToExploringPlansControllerUnit(sendPlanData.unitPlanTitle ?? "", sendPlanData.unitPlanInform ?? "", sendPlanPicture!, sendPlanData.unitSum ?? "", sendPlanData, self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
+            if indexPath.section == 0 {
+                navigator.enableNavigationToPlanAddingControllerUnit(self, unitPresentation: .fullScreen, unitTransition: .flipHorizontal)
+            } else if indexPath.section == 1 {
+                let sendPlanData = handledUnitPlans[indexPath.row]
+                let sendPlanPicture = UIImage(data: sendPlanData.unitPlanPicture!)
+                
+                navigator.enableNavigationToExploringPlansControllerUnit(sendPlanData.unitPlanTitle ?? "", sendPlanData.unitPlanInform ?? "", sendPlanPicture!, sendPlanData.unitSum ?? "", sendPlanData, self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
+            }
         } else if collectionView == typePlanCollectionView {
             let planObjectsType = fullTypePlanObjects[indexPath.row]
             
@@ -141,11 +187,23 @@ extension DirectoryControllerUnit: UICollectionViewDelegate, UICollectionViewDat
     }
 }
 
+extension DirectoryControllerUnit: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let planNicknameToSave = textField.text {
+            UserDefaults.standard.set(planNicknameToSave, forKey: "planUserNickname")
+        }
+    }
+}
+
 private extension DirectoryControllerUnit {
     private func loadFetchedUnitPlans() {
         builder.fetchUnitPlansFromStorage { (unitPlans) in
             if unitPlans.isEmpty {
-                
+                print("No unit plans")
             } else {
                 self.handledUnitPlans = unitPlans
                 self.planCollectionView.reloadData()

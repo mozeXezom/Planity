@@ -28,6 +28,7 @@ class PlanAddingControllerUnit: UIViewController {
     
     @IBOutlet weak var typePlanView: UIView!
     @IBOutlet weak var planTypePicture: UIImageView!
+    @IBOutlet weak var typeExtraView: UIView!
     
     private var navigator: PlanAddingNavigator = PlanAddingNavigator()
     private var builder: PlanAddingBuilder = PlanAddingBuilder()
@@ -155,6 +156,9 @@ private extension PlanAddingControllerUnit {
     
     private func verifyPlanState() {
         if planState {
+            planColView.backgroundColor = .clear
+            typeExtraView.isHidden = false
+            typeExtraView.layer.cornerRadius = 10
             planAddingCollectionView.isHidden = true
             typePlanView.isHidden = false
             planTypePicture.isHidden = false
@@ -162,6 +166,7 @@ private extension PlanAddingControllerUnit {
             handledPlanPicture = pictureOfTypePlan!
             builder.setTypeOfPlanState(typePlanView, pictureOfTypePlan!, planTypePicture, titlePlanTextField, typeOfPlan ?? "")
         } else {
+            typeExtraView.isHidden = true
             planAddingCollectionView.isHidden = false
             typePlanView.isHidden = true
             planTypePicture.isHidden = true

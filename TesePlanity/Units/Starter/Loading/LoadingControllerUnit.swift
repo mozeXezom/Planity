@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import Foundation
+import Firebase
 
-class LoadingControllerUnit: UIViewController {
+final class LoadingControllerUnit: UIViewController {
 
     @IBOutlet weak var loadingAppLogo: UIImageView!
     
@@ -19,15 +21,22 @@ class LoadingControllerUnit: UIViewController {
         setLoadingUnitConfiguration()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.navigator.enableNavigationToStartGuideControllerUnit(self, unitTransition: .crossDissolve, unitPresentation: .fullScreen)
-        }
-    }
-    
     private func setLoadingUnitConfiguration() {
         builder.initializeLoadingUnitUI(loadingAppLogo)
+        configureFirebaseAnalyticsState()
+    }
+    
+    private func configureFirebaseAnalyticsState() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.builder.setFirebaseAnalyticsFilteringSetup(self.builder.appInformation) { analytics in
+                switch analytics {
+                case .typeAnalytics, .analyticsError:
+                    self.navigator.enableNavigationToStartGuideControllerUnit(self, unitTransition: .flipHorizontal, unitPresentation: .fullScreen)
+                case .info(let information):
+                    self.builder.setAppInformationPresented(self.view, self.builder.appInformation)
+                }
+            }
+        }
     }
 }
 

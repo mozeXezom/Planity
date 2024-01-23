@@ -27,6 +27,6 @@ class StartGuideControllerUnit: UIViewController {
     }
     
     @IBAction func guideNavHandle(_ sender: UIButton) {
-        navigator.enableNavigationToStartGuideControllerUnit(self, unitPresentation: .fullScreen, unitTransition: .flipHorizontal)
+        navigator.enableNavigationToStartGuideControllerUnit(self, unitPresentation: .fullScreen, unitTransition: .crossDissolve)
     }
 }

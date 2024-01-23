@@ -49,4 +49,12 @@ final class DirectoryNavigator {
             currentControllerUnit.present(plannerMenuControllerUnit, animated: true)
         }
     }
+    
+    func enableNavigationToCalendarPlanControllerUnit(_ currentControllerUnit: UIViewController, unitPresentation: UIModalPresentationStyle, unitTransition: UIModalTransitionStyle) {
+        if let calendarPlanControllerUnit = navigatorUnitService.setControllerUnitInstantiation(fromUnitTag: .PlannerUnit, .calendarPlanUnit) as? CalendarPlanControllerUnit {
+            calendarPlanControllerUnit.modalTransitionStyle = unitTransition
+            calendarPlanControllerUnit.modalPresentationStyle = unitPresentation
+            currentControllerUnit.present(calendarPlanControllerUnit, animated: true)
+        }
+    }
 }

@@ -48,7 +48,30 @@ final class DirectoryBuilder {
         let fetchedUnitPlans = StorageUnitService.sharedStorage.setUnitPlansFetching()
         completion(fetchedUnitPlans)
     }
+    
+    func initalizeDirectoryUI(_ calendarPlannerButton: UIButton, _ userPlans: UILabel, _ typeOfPlans: UILabel, _ plansStats: UILabel, _ plannerMenuButton: UIButton) {
+        calendarPlannerButton.setImage(UIImage(named: "directoryCalendar")!, for: .normal)
+        userPlans.text = "Twoje cele"
+        typeOfPlans.text = "Tworzenie nowych celów"
+        plansStats.text = "Statystyki"
+        plannerMenuButton.layer.cornerRadius = 20
+        plannerMenuButton.setTitle("Otwórz menu", for: .normal)
+    }
+    
+    func setWelcomeUserNicknameTextField(_ nicknameTextfield: UITextField, _ currentUnitController: UIViewController) {
+        nicknameTextfield.delegate = currentUnitController as? any UITextFieldDelegate
+        if let planSavedNickname = UserDefaults.standard.string(forKey: "planUserNickname") {
+            nicknameTextfield.text = "Cześć, \(planSavedNickname)"
+        } else {
+            nicknameTextfield.attributedPlaceholder = NSAttributedString(
+                string: "Cześć, Drogi Użytkowniku!",
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
+            )
+        }
+    }
+}
 
+private extension DirectoryBuilder {
     private func fetchCurrentTrueDay() -> Int {
         let currentTrueDate = Date()
         let fetchCalendar = Calendar.current

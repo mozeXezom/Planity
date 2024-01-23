@@ -35,4 +35,27 @@ final class CalendarPlanBuilder {
         let multiDatePlanSelection = UICalendarSelectionMultiDate(delegate: currentUnitController as? UICalendarSelectionMultiDateDelegate)
         planCalendarView.selectionBehavior = multiDatePlanSelection
     }
+    
+    func setCalendarPlanUI(_ forwardButton: UIButton, _ calendarTitle: UILabel, _ textViewCalendar: UITextView, _ saveButton: UIButton, _ calendarInfo: UIView, _ currentController: UIViewController) {
+        forwardButton.setImage(UIImage(named: "teseClosing")!, for: .normal)
+        calendarTitle.text = "Cele kalendarza"
+        textViewCalendar.delegate = currentController.self as? UITextViewDelegate
+        saveButton.setTitle("Zapisz informacje", for: .normal)
+        saveButton.layer.cornerRadius = 20
+        calendarInfo.layer.cornerRadius = 20
+    }
+    
+    func updateCalendarTextView(_ calendarTextView: UITextView) {
+        if UserDefaults.standard.value(forKey: "calendarPlanInfo") != nil {
+            calendarTextView.text = "\(UserDefaults.standard.value(forKey: "calendarPlanInfo") ?? calendarPlaceHolder)"
+        } else {
+            calendarTextView.text = calendarPlaceHolder
+        }
+    }
+}
+
+extension CalendarPlanBuilder {
+    var calendarPlaceHolder: String {
+        return "Tutaj możesz wskazać swoje plany na przyszłe terminy lub zapisać ważne informacje. Planuj mądrze swoje zadania i cele! Zastanów się, jakie kroki możesz podjąć, aby osiągnąć swoje cele w ustalonym czasie. Tworzenie realistycznych planów pomoże Ci skuteczniej dążyć do sukcesu. Ustal priorytety w swoich planach, abyś mógł skoncentrować się na najważniejszych zadaniach."
+    }
 }

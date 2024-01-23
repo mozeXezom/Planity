@@ -30,6 +30,15 @@
 		DA2E4DC02B59652E00C9EE57 /* DayMonthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E4DBF2B59652E00C9EE57 /* DayMonthModel.swift */; };
 		DA30084B2B5724A300EE39DB /* StartGuideControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30084A2B5724A300EE39DB /* StartGuideControllerUnit.swift */; };
 		DA444D862B59B59E0049E3CF /* TypePlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA444D852B59B59E0049E3CF /* TypePlanModel.swift */; };
+		DA73B3B92B5EB2A400A5A1C3 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = DA73B3B82B5EB2A400A5A1C3 /* OneSignalFramework */; };
+		DA73B3C12B5EB30F00A5A1C3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73B3C02B5EB30F00A5A1C3 /* NotificationService.swift */; };
+		DA73B3C52B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DA73B3BE2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA73B3CC2B5EB40400A5A1C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA73B3CB2B5EB40400A5A1C3 /* GoogleService-Info.plist */; };
+		DA73B3CF2B5EB4A500A5A1C3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DA73B3CE2B5EB4A500A5A1C3 /* FirebaseAnalytics */; };
+		DA73B3D12B5EB4A500A5A1C3 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = DA73B3D02B5EB4A500A5A1C3 /* FirebaseRemoteConfig */; };
+		DA73B3D42B5EB52E00A5A1C3 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = DA73B3D32B5EB52E00A5A1C3 /* FacebookCore */; };
+		DA73B3D62B5EB67600A5A1C3 /* FirebasePropertiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73B3D52B5EB67600A5A1C3 /* FirebasePropertiesService.swift */; };
+		DA73B3D92B5EB94A00A5A1C3 /* FirebaseAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73B3D82B5EB94A00A5A1C3 /* FirebaseAnalyticsService.swift */; };
 		DA93AC582B5B04E7008F64CF /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA93AC572B5B04E7008F64CF /* IQKeyboardManagerSwift */; };
 		DA93AC5A2B5B08F2008F64CF /* StorageUnitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC592B5B08F2008F64CF /* StorageUnitService.swift */; };
 		DA93AC5F2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC5D2B5B0941008F64CF /* StorageUnitModel.xcdatamodeld */; };
@@ -44,6 +53,8 @@
 		DA93AC752B5B39E8008F64CF /* CalendarPlanControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC742B5B39E8008F64CF /* CalendarPlanControllerUnit.swift */; };
 		DA93AC772B5B39F9008F64CF /* CalendarPlanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC762B5B39F9008F64CF /* CalendarPlanBuilder.swift */; };
 		DA93AC792B5B3A0A008F64CF /* CalendarPlanNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC782B5B3A0A008F64CF /* CalendarPlanNavigator.swift */; };
+		DA93AC7D2B5B4EDE008F64CF /* EmptyPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93AC7B2B5B4EDE008F64CF /* EmptyPlanCell.swift */; };
+		DA93AC7E2B5B4EDE008F64CF /* EmptyPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AC7C2B5B4EDE008F64CF /* EmptyPlanCell.xib */; };
 		DACFE7882B5090BE0025CF99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE7872B5090BE0025CF99 /* AppDelegate.swift */; };
 		DACFE78C2B5090BE0025CF99 /* LoadingControllerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */; };
 		DACFE78F2B5090BE0025CF99 /* StarterUnit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACFE78D2B5090BE0025CF99 /* StarterUnit.storyboard */; };
@@ -55,6 +66,30 @@
 		DAF5D8F42B5A9BB200A6A7A8 /* PlanAddingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5D8F22B5A9BB200A6A7A8 /* PlanAddingCell.swift */; };
 		DAF5D8F52B5A9BB200A6A7A8 /* PlanAddingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF5D8F32B5A9BB200A6A7A8 /* PlanAddingCell.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA73B3C32B5EB30F00A5A1C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACFE77C2B5090BE0025CF99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA73B3BD2B5EB30F00A5A1C3;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA73B3C92B5EB30F00A5A1C3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA73B3C52B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA10AD622B5858670052B9A9 /* LoadingBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBuilder.swift; sourceTree = "<group>"; };
@@ -80,6 +115,13 @@
 		DA2E4DBF2B59652E00C9EE57 /* DayMonthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMonthModel.swift; sourceTree = "<group>"; };
 		DA30084A2B5724A300EE39DB /* StartGuideControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGuideControllerUnit.swift; sourceTree = "<group>"; };
 		DA444D852B59B59E0049E3CF /* TypePlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePlanModel.swift; sourceTree = "<group>"; };
+		DA73B3BE2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA73B3C02B5EB30F00A5A1C3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		DA73B3C22B5EB30F00A5A1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA73B3CA2B5EB33400A5A1C3 /* TesePlanity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TesePlanity.entitlements; sourceTree = "<group>"; };
+		DA73B3CB2B5EB40400A5A1C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA73B3D52B5EB67600A5A1C3 /* FirebasePropertiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePropertiesService.swift; sourceTree = "<group>"; };
+		DA73B3D82B5EB94A00A5A1C3 /* FirebaseAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsService.swift; sourceTree = "<group>"; };
 		DA93AC592B5B08F2008F64CF /* StorageUnitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUnitService.swift; sourceTree = "<group>"; };
 		DA93AC5E2B5B0941008F64CF /* StorageUnitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StorageUnitModel.xcdatamodel; sourceTree = "<group>"; };
 		DA93AC602B5B09BB008F64CF /* UnitPlan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitPlan+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -93,6 +135,8 @@
 		DA93AC742B5B39E8008F64CF /* CalendarPlanControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPlanControllerUnit.swift; sourceTree = "<group>"; };
 		DA93AC762B5B39F9008F64CF /* CalendarPlanBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPlanBuilder.swift; sourceTree = "<group>"; };
 		DA93AC782B5B3A0A008F64CF /* CalendarPlanNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPlanNavigator.swift; sourceTree = "<group>"; };
+		DA93AC7B2B5B4EDE008F64CF /* EmptyPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlanCell.swift; sourceTree = "<group>"; };
+		DA93AC7C2B5B4EDE008F64CF /* EmptyPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyPlanCell.xib; sourceTree = "<group>"; };
 		DACFE7842B5090BE0025CF99 /* TesePlanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesePlanity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACFE7872B5090BE0025CF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DACFE78B2B5090BE0025CF99 /* LoadingControllerUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingControllerUnit.swift; sourceTree = "<group>"; };
@@ -108,11 +152,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA73B3BB2B5EB30F00A5A1C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DACFE7812B5090BE0025CF99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA73B3B92B5EB2A400A5A1C3 /* OneSignalFramework in Frameworks */,
+				DA73B3D42B5EB52E00A5A1C3 /* FacebookCore in Frameworks */,
 				DA93AC582B5B04E7008F64CF /* IQKeyboardManagerSwift in Frameworks */,
+				DA73B3CF2B5EB4A500A5A1C3 /* FirebaseAnalytics in Frameworks */,
+				DA73B3D12B5EB4A500A5A1C3 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +214,7 @@
 				DA2E4DAF2B59595200C9EE57 /* Month */,
 				DA2E4DB02B59595800C9EE57 /* Plan */,
 				DA2E4DB12B59596600C9EE57 /* TypePlan */,
+				DA93AC7A2B5B4EC1008F64CF /* EmptyPlan */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -220,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				DACFE7952B5090BF0025CF99 /* Info.plist */,
+				DA73B3CB2B5EB40400A5A1C3 /* GoogleService-Info.plist */,
 			);
 			path = MainInfo;
 			sourceTree = "<group>";
@@ -278,6 +335,8 @@
 		DA3008482B57246500EE39DB /* Networker */ = {
 			isa = PBXGroup;
 			children = (
+				DA73B3D52B5EB67600A5A1C3 /* FirebasePropertiesService.swift */,
+				DA73B3D82B5EB94A00A5A1C3 /* FirebaseAnalyticsService.swift */,
 			);
 			path = Networker;
 			sourceTree = "<group>";
@@ -290,6 +349,15 @@
 				DA10AD6C2B585ED50052B9A9 /* StartGuideNavigator.swift */,
 			);
 			path = StartGuide;
+			sourceTree = "<group>";
+		};
+		DA73B3BF2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DA73B3C02B5EB30F00A5A1C3 /* NotificationService.swift */,
+				DA73B3C22B5EB30F00A5A1C3 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		DA93AC5B2B5B0928008F64CF /* Storage */ = {
@@ -349,10 +417,20 @@
 			path = CalendarPlan;
 			sourceTree = "<group>";
 		};
+		DA93AC7A2B5B4EC1008F64CF /* EmptyPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DA93AC7B2B5B4EDE008F64CF /* EmptyPlanCell.swift */,
+				DA93AC7C2B5B4EDE008F64CF /* EmptyPlanCell.xib */,
+			);
+			path = EmptyPlan;
+			sourceTree = "<group>";
+		};
 		DACFE77B2B5090BE0025CF99 = {
 			isa = PBXGroup;
 			children = (
 				DACFE7862B5090BE0025CF99 /* TesePlanity */,
+				DA73B3BF2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension */,
 				DACFE7852B5090BE0025CF99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -361,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				DACFE7842B5090BE0025CF99 /* TesePlanity.app */,
+				DA73B3BE2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,6 +447,7 @@
 		DACFE7862B5090BE0025CF99 /* TesePlanity */ = {
 			isa = PBXGroup;
 			children = (
+				DA73B3CA2B5EB33400A5A1C3 /* TesePlanity.entitlements */,
 				DA30083E2B57234B00EE39DB /* Application */,
 				DA3008432B5723A700EE39DB /* Units */,
 				DA3008412B57238500EE39DB /* Resources */,
@@ -400,6 +480,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA73B3BD2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA73B3C62B5EB30F00A5A1C3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				DA73B3BA2B5EB30F00A5A1C3 /* Sources */,
+				DA73B3BB2B5EB30F00A5A1C3 /* Frameworks */,
+				DA73B3BC2B5EB30F00A5A1C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = DA73B3BE2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DACFE7832B5090BE0025CF99 /* TesePlanity */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DACFE7982B5090BF0025CF99 /* Build configuration list for PBXNativeTarget "TesePlanity" */;
@@ -407,14 +504,20 @@
 				DACFE7802B5090BE0025CF99 /* Sources */,
 				DACFE7812B5090BE0025CF99 /* Frameworks */,
 				DACFE7822B5090BE0025CF99 /* Resources */,
+				DA73B3C92B5EB30F00A5A1C3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA73B3C42B5EB30F00A5A1C3 /* PBXTargetDependency */,
 			);
 			name = TesePlanity;
 			packageProductDependencies = (
 				DA93AC572B5B04E7008F64CF /* IQKeyboardManagerSwift */,
+				DA73B3B82B5EB2A400A5A1C3 /* OneSignalFramework */,
+				DA73B3CE2B5EB4A500A5A1C3 /* FirebaseAnalytics */,
+				DA73B3D02B5EB4A500A5A1C3 /* FirebaseRemoteConfig */,
+				DA73B3D32B5EB52E00A5A1C3 /* FacebookCore */,
 			);
 			productName = TesePlanity;
 			productReference = DACFE7842B5090BE0025CF99 /* TesePlanity.app */;
@@ -430,6 +533,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					DA73B3BD2B5EB30F00A5A1C3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					DACFE7832B5090BE0025CF99 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -446,29 +552,42 @@
 			mainGroup = DACFE77B2B5090BE0025CF99;
 			packageReferences = (
 				DA93AC562B5B04E7008F64CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DA73B3B72B5EB2A400A5A1C3 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				DA73B3CD2B5EB4A500A5A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DA73B3D22B5EB52E00A5A1C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = DACFE7852B5090BE0025CF99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DACFE7832B5090BE0025CF99 /* TesePlanity */,
+				DA73B3BD2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA73B3BC2B5EB30F00A5A1C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DACFE7822B5090BE0025CF99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA10AD752B585F670052B9A9 /* OpenSans-Medium.ttf in Resources */,
 				DAF5D8F52B5A9BB200A6A7A8 /* PlanAddingCell.xib in Resources */,
+				DA73B3CC2B5EB40400A5A1C3 /* GoogleService-Info.plist in Resources */,
 				DA10AD742B585F670052B9A9 /* OpenSans-Regular.ttf in Resources */,
 				DA10AD772B585F670052B9A9 /* OpenSans-Bold.ttf in Resources */,
 				DA10AD762B585F670052B9A9 /* OpenSans-LightItalic.ttf in Resources */,
 				DA10AD7A2B5865330052B9A9 /* PlannerUnit.storyboard in Resources */,
 				DA10AD732B585F670052B9A9 /* OpenSans-SemiBold.ttf in Resources */,
 				DACFE7942B5090BF0025CF99 /* LaunchScreen.storyboard in Resources */,
+				DA93AC7E2B5B4EDE008F64CF /* EmptyPlanCell.xib in Resources */,
 				DACFE7912B5090BF0025CF99 /* Assets.xcassets in Resources */,
 				DA2E4DB52B59599000C9EE57 /* MonthCell.xib in Resources */,
 				DACFE78F2B5090BE0025CF99 /* StarterUnit.storyboard in Resources */,
@@ -480,6 +599,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA73B3BA2B5EB30F00A5A1C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA73B3C12B5EB30F00A5A1C3 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DACFE7802B5090BE0025CF99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,12 +619,14 @@
 				DA93AC6B2B5B2200008F64CF /* ExploringPlansNavigator.swift in Sources */,
 				DA30084B2B5724A300EE39DB /* StartGuideControllerUnit.swift in Sources */,
 				DA93AC792B5B3A0A008F64CF /* CalendarPlanNavigator.swift in Sources */,
+				DA73B3D62B5EB67600A5A1C3 /* FirebasePropertiesService.swift in Sources */,
 				DA10AD6D2B585ED50052B9A9 /* StartGuideNavigator.swift in Sources */,
 				DACFE78C2B5090BE0025CF99 /* LoadingControllerUnit.swift in Sources */,
 				DA93AC702B5B2F7F008F64CF /* PlannerMenuBuilder.swift in Sources */,
 				DA93AC672B5B21BA008F64CF /* ExploringPlansControllerUnit.swift in Sources */,
 				DA2E4DAB2B594ADE00C9EE57 /* DirectoryBuilder.swift in Sources */,
 				DA2E4DB82B595AFC00C9EE57 /* PlanCell.swift in Sources */,
+				DA93AC7D2B5B4EDE008F64CF /* EmptyPlanCell.swift in Sources */,
 				DAF5D8F02B5A8B7E00A6A7A8 /* PlanAddingNavigator.swift in Sources */,
 				DAF5D8F42B5A9BB200A6A7A8 /* PlanAddingCell.swift in Sources */,
 				DA93AC5A2B5B08F2008F64CF /* StorageUnitService.swift in Sources */,
@@ -517,10 +646,19 @@
 				DA2E4DBC2B595B0900C9EE57 /* TypePlanCell.swift in Sources */,
 				DA93AC632B5B09BB008F64CF /* UnitPlan+CoreDataProperties.swift in Sources */,
 				DA10AD692B585A760052B9A9 /* NavigatorUnitService.swift in Sources */,
+				DA73B3D92B5EB94A00A5A1C3 /* FirebaseAnalyticsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA73B3C42B5EB30F00A5A1C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA73B3BD2B5EB30F00A5A1C3 /* OneSignalNotificationServiceExtension */;
+			targetProxy = DA73B3C32B5EB30F00A5A1C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DACFE78D2B5090BE0025CF99 /* StarterUnit.storyboard */ = {
@@ -542,6 +680,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA73B3C72B5EB30F00A5A1C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SH44GJ8DSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teslx.work.TesePlanity.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DA73B3C82B5EB30F00A5A1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SH44GJ8DSN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teslx.work.TesePlanity.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		DACFE7962B5090BF0025CF99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -664,15 +860,19 @@
 		DACFE7992B5090BF0025CF99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TesePlanity/TesePlanity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SH44GJ8DSN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TesePlanity/Application/MainInfo/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Aby zoptymalizować Twoje doświadczenie w korzystaniu z aplikacji, prosimy Cię o zgodę na używanie tego identyfikatora. To narzędzie pomaga nam dokładniej analizować Twoje interakcje z aplikacją, zapewniając dostarczanie treści dostosowanych do Twoich zainteresowań.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = PlannerUnit;
+				INFOPLIST_KEY_UIMainStoryboardFile = StarterUnit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -688,22 +888,26 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DACFE79A2B5090BF0025CF99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TesePlanity/TesePlanity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SH44GJ8DSN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TesePlanity/Application/MainInfo/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Aby zoptymalizować Twoje doświadczenie w korzystaniu z aplikacji, prosimy Cię o zgodę na używanie tego identyfikatora. To narzędzie pomaga nam dokładniej analizować Twoje interakcje z aplikacją, zapewniając dostarczanie treści dostosowanych do Twoich zainteresowań.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = PlannerUnit;
+				INFOPLIST_KEY_UIMainStoryboardFile = StarterUnit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -719,13 +923,22 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA73B3C62B5EB30F00A5A1C3 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA73B3C72B5EB30F00A5A1C3 /* Debug */,
+				DA73B3C82B5EB30F00A5A1C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DACFE77F2B5090BE0025CF99 /* Build configuration list for PBXProject "TesePlanity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -747,6 +960,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA73B3B72B5EB2A400A5A1C3 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		DA73B3CD2B5EB4A500A5A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+		DA73B3D22B5EB52E00A5A1C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
 		DA93AC562B5B04E7008F64CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -758,6 +995,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA73B3B82B5EB2A400A5A1C3 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA73B3B72B5EB2A400A5A1C3 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
+		DA73B3CE2B5EB4A500A5A1C3 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA73B3CD2B5EB4A500A5A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DA73B3D02B5EB4A500A5A1C3 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA73B3CD2B5EB4A500A5A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		DA73B3D32B5EB52E00A5A1C3 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA73B3D22B5EB52E00A5A1C3 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
 		DA93AC572B5B04E7008F64CF /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA93AC562B5B04E7008F64CF /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
